@@ -1,60 +1,255 @@
- 
-   
 
- .links {
-	width:60%;
-	display:flex;
-	justify-content:space-between;
-	align-items:center;
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
-  header .logo {
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
 	display: block;
-    margin-left: 50%;
-    margin-right: auto;
-  }
-  .services-header-img {
-	  display:flex;
-	 align-content:center;
-	 }
-	 
-	 #inform .containerOne {		
-	  display: flex;
-	  width: 90%;
-	  text-align:center;
-	  justify-content:space-around;
-	  }
+}
+body {
+	line-height: 1;
+	padding:0;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 
-     #inform .containerOne div{
-	border:1px solid black;
-	flex-direction:column-reverse;
+/* Set every element's box-sizing to border-box */
+ *{
+	box-sizing:border-box;
+	margin:0;
+  	padding:0;
+	max-width:100%;
+}
 
-   }
-      #inform .containerTwo{
+html, body {
+    height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+ h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+
+
+ nav{
+	position: fixed;
+	width: 80%;
+	margin: 0px auto;
+	white-space: nowrap;
+	border: 1px solid dodgerblue;
+    background-color: dodgerblue;
+	
+ }
+
+
+ a{
+	display: inline-block;
+	width: 10%;
+	margin: 0.7%;
+	font-size: 15px;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	
+}
+ a:hover {
+	color: rgb(153, 51, 51);
+ }
+ hr {
+	display: block;
+	height: 1px;
+	border-top: 1px solid black;
+	margin: 2em 0;
+}
+body { 
+	background: white;
+	margin: 0% 10%;
+}
+
+ .left{
+	width: 48%;
+	margin: 0% auto;
+	padding: 0 0 0 0;
+	display: inline-block;
+	font-size: 40px;
+	text-align: center;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.button {
+	display: inline-block;
+	text-align: center;
+	padding: 1% 3%;
+	border: 1px black solid;
+	background-color: dodgerblue;
+	font-size: 24px;
+	color: white;
+}
+
+.button:hover{
+	background-color: rgb(153, 51, 56);
+	cursor: pointer;
+}
+
+.right{
+	width: 48%;
+	margin: 0 auto;
+	padding: 5% 10%;
+	display: inline-block;
+}
+
+h2 {
+	font-size: 26px;
+	font-weight: bold;
+	display: inline-block;
+	font-style: italic;
+}
+
+.box1{
+	display: inline-block;
+	width: 48%;
+	margin: 0.5%;
+	font-size: 20px;
+}
+
+.middle-img {
+	background: url(img/mid-page-accent.jpg);
+	display: inline-block;
+	width: 100%;
+	margin: 4% 0 4% 0;
+	
+}
+
+.box2 {
+	display: inline-block;
+	width: 32%;
+	margin: 0.44%;
+	font-size: 20px;
+}
+
+footer {
+	text-align: center;
+}
+
+/* Second project starts here */
+
+*{
+	box-sizing:border-box;
+	padding:0;
+	margin: 0;
+	max-width: 100%;
+}
+.services_header {
+	width: 100%;
+}
+
+.nav {
+	width: 100% ;
+	position: fixed;	
 	display: flex;
-	width: 90%;
-	text-align:center;
-	justify-content:space-around;
-   }
-	
-	 #inform .containerTwo div{
-		border:1px solid black;
-		flex-direction:column-reverse;
-	}
-	 #inform .containerOne div{
-	 justify-content:space-between;
-	
-  }
-  .About {
-	  display: flex;
-  }
- .services-info-img {
+	line-height: 1.5rem;
+	justify-content: space-around; 
+	background-color: dodgerblue;
+}
+
+.services-header-img {
+	background: url(img/.services-header-img.jpg);
+	display: inline-block;
+	width: 100%;
+	margin: 4% 0 4% 0;
+}
+
+.intro {
+	margin: 0 0 1em 0;
+}
+
+.hr1 {
+	display: block;
+	height: 1px;
+	border-top: 2px solid black;
+	margin: 0 auto;
+}
+.service_grid {
 	display: flex;
-	
-	
-  }
-   h5{
-	align-content:center; 
-  }
-  
-    
-  
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 100%;
+
+}
+.gridbox{
+	/* display: flex; */
+	border: 1px solid black;
+	background-color:dodgerblue;
+	flex-wrap: wrap;
+	max-width: 40%;
+	margin: 4% 5%;
+	padding: 2%;
+}
+
+.gridbox p {
+	margin: 4% 0;
+}
+
+.learnmore {
+	line-height: 1.5em;
+	width: 40%;
+	margin: 0 0;
+}
+
+.learnmore:hover{
+ background-color: rgb(153, 51, 56);
+}
+
+.facts{
+	display: flex;
+	padding: 5%;
+}
+
+.facts img {
+	width: 40%;
+	margin:0 0 0 5%;
+}
+
+.facts ul {
+	padding-left: 5%;
+	list-style-type: square;
+}
+
